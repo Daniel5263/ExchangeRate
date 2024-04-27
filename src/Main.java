@@ -4,12 +4,11 @@ class Main {
     public static void main(String[] args) {
         Graph g = new Graph();
 
-        // Add edges (exchange rates)
-        g.addEdge("USD", "JPY", 0.5);  // 1 USD = 0.5 JPY
-        g.addEdge("USD", "EUR", 0.25); // 1 USD = 0.25 EUR
-        g.addEdge("JPY", "EUR", 0.6);  // 1 JPY = 0.6 EUR
-        g.addEdge("EUR", "GBP", 0.8);  // 1 EUR = 0.8 GBP
-        g.addEdge("GBP", "CHF", 1.2);  // 1 GBP = 1.2 CHF
+        g.addEdge("USD", "JPY", 0.5);
+        g.addEdge("USD", "EUR", 0.25);
+        g.addEdge("JPY", "EUR", 0.6);
+        g.addEdge("EUR", "GBP", 0.8);
+        g.addEdge("GBP", "CHF", 1.2);
 
         String from = "USD", to = "GBP";
         double maxRate = maxConversionRate(g, from, to);
